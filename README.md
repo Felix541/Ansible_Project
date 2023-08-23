@@ -1,12 +1,6 @@
 # Ansible_Project
 Ansible automation
 
-## Table of Content
-1. Setup 
-2. Ansible Playbooks
-
-
-
 ### 1. Setup
 
 ### Setup vm Network
