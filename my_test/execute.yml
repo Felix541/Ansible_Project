@@ -1,0 +1,11 @@
+- hosts: client
+  roles:
+    - role_1
+
+- hosts: backend
+  roles:
+   - role_2
+
+- hosts: local
+  roles:
+    - role_2
