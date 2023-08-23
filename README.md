@@ -2,18 +2,25 @@
 Ansible automation
 
 ## Table of Content
-1. Environment / Setup (% sowas in die Richtung, sowas wie Überblick)
+1. Environment / Setup 
 2. Ansible Playbooks
 
 
 ### 1. Environment
 
-% Zeichnung VM Netzwerk
+
+Setup vm Network
 
 + Setting up two VMs with MX-Linux in VirtualBox
-+ Setting up internes Netzwerk and NAT for Internet
++ Setting up intern network and NAT for Internet
 
-% Screenshot von allen beiden VM machen (%Weg zu Screenshot cd /etc/network
++ Assigning static ip addresses for the internal network of the two virtual machines
+
+![image](https://github.com/Felix541/Ansible_Project/assets/136257812/cb0a8d77-a82a-4d45-90eb-f9176150ab4a)
+
+
+
+
 % dann die Datei interfaces auswählen mit nano interfaces und dann Screenshot machen )
 % Beschreibung unter Bild "Statische Zuweisung der IP-Adressen"
 
