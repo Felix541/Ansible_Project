@@ -16,8 +16,9 @@ Ansible automation
 + Assigning static ip addresses for the internal network of the two virtual machines
 
 
-![Alt text](<Screenshot 2023-08-23 221904.png>) &nbsp; &nbsp; &nbsp; &nbsp;![Alt text](<Screenshot 2023-08-23 222247.png>)
-<br>
+![Screenshot 2023-08-23 222247](https://github.com/Felix541/Ansible_Project/assets/136257812/8c70b3fa-6f9e-4211-ac6f-f0c8df6a5053) &nbsp; &nbsp; &nbsp; &nbsp; ![Screenshot 2023-08-23 221904](https://github.com/Felix541/Ansible_Project/assets/136257812/0f3780ad-0a01-493f-92ab-d9bb9a623146)
+
+
 interfaces with example values
 
 
