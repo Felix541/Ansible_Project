@@ -1,0 +1,4 @@
+- name: Create a file with text
+  copy:
+    content: "{{ message }}"
+    dest: ~/Documents/sample.txt

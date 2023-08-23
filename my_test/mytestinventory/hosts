@@ -1,0 +1,12 @@
+[backend]
+
+[backend:children]
+client
+local
+
+[client]
+HostClient ansible_host=192.179.1.102
+HostClient ansible_ssh_private_key_file=/home/User_MXLinux/.ssh/id_rsa
+
+[local]
+HostLocal ansible_connection=local
