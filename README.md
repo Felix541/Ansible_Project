@@ -2,41 +2,48 @@
 Ansible automation
 
 ## Table of Content
-1. Environment / Setup 
+1. Setup 
 2. Ansible Playbooks
 
 
-### 1. Environment
 
+### 1. Setup
 
-Setup vm Network
+### Setup vm Network
 
 + Setting up two VMs with MX-Linux in VirtualBox
 + Setting up intern network and NAT for Internet
-
 + Assigning static ip addresses for the internal network of the two virtual machines
 
-![image](https://github.com/Felix541/Ansible_Project/assets/136257812/cb0a8d77-a82a-4d45-90eb-f9176150ab4a)
+
+![Alt text](<Screenshot 2023-08-23 221904.png>) &nbsp; &nbsp; &nbsp; &nbsp;![Alt text](<Screenshot 2023-08-23 222247.png>)
+<br>
+interfaces with example values
 
 
-
-
-% dann die Datei interfaces auswählen mit nano interfaces und dann Screenshot machen )
-% Beschreibung unter Bild "Statische Zuweisung der IP-Adressen"
-
-+ Erstellen von SSH private und publik key
-+ Hinzufügen Firewallregel: sudo ufw allow from 192.179.1.101 to any port 22
++ Add firewall rule for SSH to allow incoming SSH requests from Admin-VM
+    + sudo ufw allow from 192.123.1.101 to any port 22
 
 ### 2. Ansible Playbooks
 
-+ Erstellen einer Ansible Playbook Umgebung mit Inventory und Rollen
-+ Ausführen von unterschiedlichen Aufgaben auf dem Zielhost, bzw. auf dem localhost
+### Overview playbook structure
 
-% Screenshot wenn
-ansible-playbook -i mytestinventory -e '@extra_vars.json' execute.yml 
-% ausgeführt wurde
++ Creating an Ansible Playbook Environment with Inventory and Roles in the folder my_test
 
-% Screenshot von den geänderten Verzeichnissen auf Zielhost und Local
+    + mytestinventory: group_vars and hosts
+        + group_vars: Storing vars for different hosts
+    + hosts: client, local 
+    + roles: Grouping multiple tasks together for different roles
+        + role_1
+            + create folder
+            + create five text files
+            + Replace text in line 2 of two text files
+            + Run tree command
+            + Display tree command output
+        + role_2
+            + Create a file with text 
+
+    + execute.yml: Declaring where and which role is executed
 
 
 
